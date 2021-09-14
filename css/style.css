@@ -1,0 +1,547 @@
+html{
+	font-size: 62.5%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.clearfix{
+	clear: both;
+}
+#container{
+	margin: 0 auto;
+	width: 100%;
+	/*height: 500px;*/
+	font-family: arial;
+
+		}
+
+	header{
+
+		height: 100vh;
+		}
+		.contact-banner ul{
+			list-style-type: none;
+			display: flex;
+			background-color: white;
+			height:25px;
+			padding-top: 5px;
+		}
+		hr{
+			border-top: 1px solid #56790b;
+
+		}
+		.contact-banner .text{
+			padding-left: 5px;
+			padding-right: 5px;
+			flex: 6;
+
+		}
+		.contact-banner .icon {
+			text-align: right;
+			flex: 1;
+			color: black;
+		}
+		.contact-banner .icon_instagram{
+			flex-basis: 60%;
+			padding-left:5px;
+		}
+		
+/*
+		@media all and (max-width:1000px){
+
+		} */
+
+			.contact-banner p{
+				text-align: left;
+				font-size: 1.3rem;
+				font-family: 'Montserrat', sans-serif;
+			}
+			.contact-banner a{
+				text-decoration: none;
+				color: black;
+
+			}
+			.contact-banner a:hover{
+				text-decoration: none;
+				color: #223e0d;
+			}
+
+
+			.hamburger{
+				display:none;
+				font-size: 30px;
+			}
+
+			.hamburger-menu{
+				padding: 40px 40px 0 0;
+				text-align: center;
+			}
+			.hamburger-close{
+				padding-top: 30px;
+				text-align: center;
+				display: none;
+			}
+
+			.fa-bars{
+				color: #000000;
+				text-shadow:1px 1px 5px #6d6d6d;
+
+			}
+			.fa-times{
+				color: #223e0d;
+			}
+
+
+
+
+		#main-menu{
+
+		}
+
+		 #upper-menu{
+
+			width: 100%;
+			/*bottom:0;*/
+			/*font-family: 'Lato', sans-serif;*/
+			font-family: 'Montserrat', sans-serif;
+			background-color: white;
+
+		}
+		#upper-menu ul{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+		}
+
+		#upper-menu li{
+			list-style-type: none;
+			/* flex-basis:12.5%; */
+			font-size: 2.0rem;
+			text-align: center;
+		}
+		.logo{
+			flex: 2;
+		}
+		.menu-front{
+			padding-top: 50px;
+			flex: 2;
+		}
+		.menu-back{
+			padding-top: 50px;
+			flex: 3;
+		}
+
+					#upper-menu ul li:hover{
+						background-color: #ffffff;
+						color: #4f9916;
+					}
+
+			#upper-menu a{
+				color: #000000;
+				text-decoration: none;
+				}
+				#upper-menu a:hover{
+					color: #4f9916;
+					}
+
+
+		.header-image{
+			background-image: url("../img/Kudlaty-Klebuszek-szczenieta-pudle-morelowe2020n.jpg");
+			background-repeat: no-repeat;
+			height: 83%;
+			/* display: flex; */
+			display:grid;
+			grid-template-columns: repeat(3,1fr);
+
+		}
+
+			.header-tittle{
+				padding: 13% 0 0 0;
+				text-align: center;
+				color: white;
+				text-shadow:1px 1px 5px black;
+				font-family: 'Martel Sans', sans-serif;
+				grid-column-start: 3;
+				align-self: center;
+
+			}
+			.header-tittle h1{
+				font-size: 3.5rem;
+				line-height: 5.0rem;
+
+			}
+			.header-tittle h2{
+				font-size: 6.5rem;
+				line-height:8.0rem;
+				color: white;
+			}
+
+
+				@media all and (max-width:1300px){
+					.contact-banner p{
+						font-size: 1.0rem;
+					}
+
+					#upper-menu ul{
+
+					}
+				}
+
+
+
+				@media all and (max-width:800px){
+					html{
+						font-size: 40.5%;
+					}
+
+					.contact-banner{
+						display:none;
+					}
+
+					#upper-menu ul{
+						flex-direction: column;
+						padding-bottom: 20px;
+					}
+					#upper-menu li a{
+						font-size: 1.5rem;
+					}
+					#upper-menu li {
+						padding: 15px;
+					}
+					#upper-menu .logo{
+						display: none;
+						flex:1;
+					}
+/*
+					.hamburger-menu{
+						display: none;
+					}
+
+					.hamburger-close{
+						display: block;
+					}
+	 */
+					#upper-menu{
+						display:none;
+					}
+					/* #upper-menu.open{
+						display:block;
+					} */
+					.hamburger{
+						display:flex;
+					}
+
+					.hamburger a{
+						/* flex: 1; */
+						display: flex;
+						margin: 0 10px 0 10px;
+					}
+
+					.hamburger-menu{
+						flex: 5;
+						align-self: flex-start;
+						text-decoration: none;
+					}
+					.hamburger-logo{
+						flex: 1;
+						align-self: flex-end;
+					}
+					.hamburger-menu.close{
+						display: none;
+					}
+/*
+					.hamburger-close{
+						display: none;
+					}
+					.hamburger-close.open{
+						display: block;
+					}  */
+					
+					.header-tittle{
+						grid-column: 1/4;
+						align-self: start;
+						padding: 10 10 0 10;
+
+					}
+					.newsletter_section .newsletter_form input{
+						padding: 10 10 5 10;
+						margin: 0px;
+					}
+					@media all and (max-width:640px){
+						.header-image{
+							background-image: url("../img/Kudlaty-Klebuszek-szczenieta-pudle-morelowe2020-mobile.jpg");
+	
+						}
+
+					}
+
+
+				}
+	main{
+	}
+
+	.main_img{
+		width: 100%;
+
+	}
+	span{
+		color:#4C6600;
+	}
+	h2{
+		text-align: center;
+		font-size:4.0rem;
+		/*text-shadow:1px 1px 5px black;*/
+		font-family: 'Montserrat', sans-serif;
+		color: #030303;
+
+	}
+	.first_section{
+		height: 50vh;
+		padding-top: 80px;
+	}
+	
+	.first_section article{
+		font-family: 'Martel Sans', sans-serif;
+		width:50%;
+		color: #030303;
+		padding-top:40px;
+	}
+
+	.first_section .centered_art{
+		margin: auto;
+	}
+
+	.first_section .article_title{
+		text-align:left;
+		font-size: 2.5rem;
+		font-weight: bolder;
+		text-transform:uppercase;
+	}
+	.first_section .article_description{
+		text-align:left;
+		font-size: 1.8rem ;
+	}
+
+
+
+	.newsletter_section{
+		background-color: #56790b;
+		height: 40vh;
+		/* display:grid;
+		grid-template-columns: 3fr 1fr; */
+		display: flex;
+		color: white;
+
+	}
+	.newsletter-text{
+		flex: 3;
+		display: flex;
+		flex-direction: column;
+		padding-left: 80px;
+
+	}
+	.newsletter_section .newsletter_desc{
+		font-size: 2.5rem;
+		font-family: 'Montserrat', sans-serif;
+		flex: 1;
+		padding: 60px 0 20px 10px;
+		width: 70%;
+	}
+	.newsletter_section .encouragemet{
+
+		text-transform:uppercase;
+		font-family: 'Montserrat', sans-serif;
+		flex: 1;
+		font-size: 3.5rem;
+		width: 70%;
+		padding: 20px 0 20px 10px;
+	}
+	.newsletter_section .newsletter_form{
+
+
+
+	}
+	.newsletter_section .newsletter_form {
+		font-size: 1.5rem;
+		display: flex;
+		flex-flow: row wrap;
+ 		align-items: center;
+		flex: 3;
+	}
+
+
+	.newsletter_section .newsletter_form input{
+		padding: 10px 100px 10px 10px;
+		margin: 5px;
+	}
+	::placeholder{
+		font-size: 1.2rem;
+	}
+	label{
+		flex:100%;
+		font-family: 'Martel Sans', sans-serif;
+
+	}
+	label a{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	label a:hover{
+		color: #223e0d;
+	}
+	.newsletter_section .newsletter_form button{
+		background-color:#000000;
+		color:#ffffff;
+		padding: 10px 60px;
+		border-radius: 6px;
+		border: 2px solid #000000;
+		text-transform:uppercase;
+		font-size: 1.2rem;
+
+	}
+	.newsletter-image{
+		/* background-image: url("../img/szczenietav2.jpg");
+		background-repeat: no-repeat; */
+		width: 100%;
+		flex:1;
+	}
+
+
+	.second_section{
+		width:100%;
+		padding-top: 100px;
+	}
+
+	.second_section article{
+		padding-top: 40px;
+	}
+	.second_section .morele-szczenieta{
+		float: left;
+		padding: 0 30 20 0;
+		width: 420px;
+	}
+	.second_section .odette{
+		float: right;
+		width: 420px;
+		padding: 20 0 20 20;
+	}
+	.second_section .article_description{
+
+		text-align: left;
+		padding: 0px 150px 50px 150px;
+
+
+	}
+
+	.second_section .article_description p{
+		font-family: 'Martel Sans', sans-serif;
+		color: #030303;
+		font-size: 1.8rem;
+		padding-bottom: 10px;
+	}
+
+
+	.third_section h2{
+		padding-top: 80px;
+	}
+
+	.third_section{
+		height:80vh;
+
+	}
+	.third_section h3{
+		text-align: center;
+		font-size: 3.0rem;
+		font-family: 'Montserrat', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		padding-top: 30px;
+	}
+
+	 a{
+		text-decoration: none;
+		color:black;
+	}
+
+	a:hover{
+		color: #223e0d
+	}
+
+	footer{
+		width: 100%;
+		background: #56790b;
+		height: 20vh;
+		color:white;
+		font-size: 1.2rem;
+		font-family: 'Montserrat', sans-serif;
+
+	}
+	.footer_data{
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+	}
+	footer ul{
+		list-style-type: none;
+
+	}
+	.footer_contact_1 h3{
+		padding: 25 0 5 25;
+	}
+	.footer_contact_1 li{
+		padding: 5 0 5 25;
+	}
+	.footer_contact_2 ul{
+		padding-top: 45px;
+		padding-left: 40px;
+	}
+	.footer_contact_2 li{
+		padding: 5 0 5 15;
+	}
+
+	.footer_center{
+		text-align: center;
+	}
+
+	.f-menu li{
+		padding: 5 0 5 0;
+	}
+	.f-menu ul{
+		padding-top: 25px;
+	}
+	.footer_center{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		width: 100%;
+	}
+	.footer_center p{
+		grid-column-start: 2;
+	}
+/* 
+
+	.left_footer{
+		padding: 20px;
+		float:left;
+	}
+	.right_footer{
+		padding:20px;
+		float:right;
+	}
+	.right_footer ul{
+		list-style-type: none;
+	}
+	.right_footer ul li{
+		float:left;
+		padding: 0 15px;
+		font-weight: bold;
+		font-size:18px;
+		color:white;
+		transition: color 1s;
+
+	}
+	.right_footer ul li:hover{
+		color: #6D297B;
+	} */

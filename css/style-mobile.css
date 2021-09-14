@@ -1,0 +1,248 @@
+html{
+	font-size: 62.5%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+		
+.clearfix{
+	clear: both;
+}
+#container{
+	margin: 0 auto;
+	width: 100%;
+	/*height: 500px;*/
+	font-family: 'Lato', sans-serif;
+	
+		}
+
+	header{
+		background: url(../img/Kudlaty-Klebuszek-szczenieta-pudle-morelowe2017-mobile.jpg) no-repeat;
+		background-size: cover;
+		height: 100%;
+		padding: 20px;	
+		
+		}
+		/*.logo-container{
+			background: #ffffff;
+			width:400px;
+			border: 0px;
+			border-radius: 50% 100% 100% 100%;
+
+		}
+		.logo-container .logo{
+			width: 30.0rem;
+			/*padding: 1.0rem;
+			/*fill: white;
+			/*float: left;*/
+			/*border: 0px;
+			border-radius: 0 0 100% 100%;
+			
+		}
+		.contact-banner{
+
+			background-color: white;
+			width: 100%;
+			height: 4.0rem;
+		}*/
+		.right_side{
+				
+				width: 100%;
+				color: white;
+				padding: 14% 0 0 0;
+				line-height:8.0rem;
+				text-align: center;
+				text-shadow:1px 1px 5px black;
+				font-family: 'Martel Sans', sans-serif;
+			}
+				.right_side h1{
+					font-size: 3.5rem;
+					
+					
+				}
+				.right_side h2{
+					font-size: 6.5rem;
+				}
+		.page-nav-opened .navigation-menu{
+				position:absolute;
+				/*bottom:0;*/
+				font-family: 'Lato', sans-serif;
+				/*display: none;*/
+				width: 100%;
+		
+			}
+		.page-nav .navigation-menu li{
+		}
+		.page-nav .navigation-menu li a{
+			color: #000000;
+			text-decoration: none;
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		.page-nav .hamburger{
+				border: 0;
+				background: 0;
+				position: absolute;
+				fill: #ffffff;
+				width: 70px;
+				height: 70px;
+				right: 20px;
+				top: 20px;
+			}
+			.page-nav .hamburger .hamburger-icon{
+				width: 50px;
+			}
+			.page-nav .hamburger .close-icon{
+				display: none;
+			}
+				/*.upper-menu ul{
+					list-style-type: none;
+					
+					}
+					#upper-menu ul li{
+						float:left;
+						padding: 20px 30px;
+						font-size:2.0rem;
+						margin: 0 10px;
+						font-weight: bold;
+						text-shadow:1px 1px 5px black;
+						transition: background 1s;
+						background: #223e0d;
+						border: 1px;
+						border-radius: 5px 5px 0 0;
+					}
+						#upper-menu ul li:hover{
+						
+						background-color: #ffffff;
+						background: rgba(0, 0, 0, 0.6);
+						}
+			
+				#upper-menu a{
+					color: white;
+					text-decoration:none;
+					
+				}
+				*/
+				.page-header .nav-opened {
+					background: #ffffff;
+				}
+	main{}
+	
+	.main_img{
+		width: 100%;
+		
+	}
+	section{
+		width:100%;
+		margin: 30px 5% 30px 0;
+		float:left;
+		color: #666666;
+	}
+
+	section h2{
+		text-align: center;
+		font-size:60px;
+		/*text-shadow:1px 1px 5px black;*/
+		padding: 50px;
+		color: #333333;
+		
+	}
+	
+	.section_description{
+		font-size: 2.5rem;
+		margin: 30px;
+
+	}
+	.section_description a{
+		text-decoration: none;
+		color: #223e0d;
+	}
+	form{
+		font-size: 3.0rem;
+		text-align: center;
+	}
+	.newsletter_group{
+		padding: 30px;
+	}
+	.newsletter_group input{
+		width: 50%;
+		display: block;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		box-sizing: border-box;
+		border: 1xp solid #333333;
+		font-size: 2.5rem;;
+	}
+	.newsletter_group input:focus{
+		box-shadow: inset 0 0 0 #223e0d;	
+	}
+	.contact_section{
+		color: #ffffff;
+		background-color: #223e0d;
+		/*height: 50px;*/
+		padding-bottom: 15px;
+
+	}
+	.contact_section .contact_breeder{
+		font-size: 25px;
+		padding-bottom: 20px;
+		line-height: 20px;
+	}
+	.contact_section .contact_address{
+		width: 50%;
+		float: left;
+	}
+	.contact_section .contact_mail{
+		width: 50%;
+		float: left;
+		padding-bottom: 30px;
+		
+	}
+	.contact_section .contact_phone-number_mobile{
+		width: 50%;
+		float: right;
+	}
+	.contact_section .contact_phone-number_landline{
+		width: 50%;
+		float: right;
+		padding-bottom: 30px;
+	}
+	.contact_section a{
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	footer{
+		width: 100%;
+		height: 100px;
+		margin-top: 30px;
+		font-size: 2.5rem;
+
+		
+	}
+	
+	.menu_footer{
+		line-height: 30px;
+		text-align: center;
+		padding-bottom: 20px;
+
+	}
+	.menu_footer ul{
+		list-style-type: none;
+	}
+	.menu_footer ul li{
+		padding-bottom: 15px;
+		font-weight: bold;
+		transition: color 1s;
+		
+	}
+	.menu_footer ul li:hover{
+		color: #223e0d;;
+	}
+	.copy_footer{
+		text-align: center;
+		padding-bottom: 15px;
+	}

@@ -1,0 +1,96 @@
+
+<html>
+	<head>
+		<title>Szczenięta - Hodowla "Kudłaty Kłębuszek"</title>
+		<link rel="stylesheet" href="css/style_szczenieta.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/0cb176fde2.js" crossorigin="anonymous"></script>
+
+
+	</head>
+    <body>
+        <div id="container">
+            <main>
+                <div class="our-puppies">
+                    <h2>Nasze <span>szczenięta</span></h2>
+                    <section class="puppies puppies2000">
+                        <button class="btn active" onclick="filterSelection('all')">Wszystkie </button><span>|</span><button class="btn" onclick="filterSelection('tila')"> Tila </button><span>|</span><button class="btn" onclick="filterSelection('odette')"> Odette </button><span>|</span><button class="btn" onclick="filterSelection('dolly')"> Dolly </button><span>|</span><button class="btn" onclick="filterSelection('mela')"> Mela </button><span>|</span><button class="btn" onclick="filterSelection('boni')"> Boni </button><span>|</span><button class="btn" onclick="filterSelection('jessy')"> Jessy</button>
+                        <h3>2004-2021</h3>
+                        <div class="puppies-gallery">
+                            <div class="column odette">
+                                <a class="puppies-photo z-2021" href="#"><p>Z</p></a>
+                            </div>
+                            <div class="column tila">
+                                <a class="puppies-photo z-2021" href="#"><p>X</p></a>
+                            </div>
+                            <div class="column odette">
+                                <a class="puppies-photo z-2021" href="#"><p>W</p></a>
+                            </div>
+                            <div class="column odette">
+                                <a class="puppies-photo z-2021" href="#"><p>U</p></a>
+                            </div>
+                            <div class="column odette">
+                                <a class="puppies-photo z-2021" href="#"><p>T</p></a>
+                            </div>
+                            <a class="puppies-photo z-2021" href="#"><p>S</p></a>
+                            <a class="puppies-photo z-2021" href="#"><p>R</p></a>
+                        
+
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script>
+            filterSelection("all") // Execute the function and show all columns
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script>
+    </body>
+    </html>

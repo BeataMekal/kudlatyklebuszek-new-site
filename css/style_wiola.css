@@ -1,0 +1,48 @@
+html{
+	font-size: 62.5%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.clearfix{
+	clear: both;
+}
+
+main{
+
+}
+span{
+    color:#4C6600;
+}
+h2{
+    text-align: center;
+    font-size:4.0rem;
+    /*text-shadow:1px 1px 5px black;*/
+    font-family: 'Montserrat', sans-serif;
+    color: #030303;
+
+
+}
+h3{
+    text-align: center;
+    font-size:2.5rem;
+    /*text-shadow:1px 1px 5px black;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #030303;
+
+}
+h4{
+    font-size:2.0rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #030303;
+    padding-top: 10;
+
+}
+.poodle_wiola img{
+	text-align: center;
+	width: 400px;
+}
