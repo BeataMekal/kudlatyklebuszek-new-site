@@ -13,7 +13,6 @@ html{
 #container{
 	margin: 0 auto;
 	width: 100%;
-	/*height: 500px;*/
 	font-family: arial;
 
 		}
@@ -25,14 +24,14 @@ html{
 		.contact-banner ul{
 			list-style-type: none;
 			display: flex;
-			background-color: white;
-			height:25px;
+			background-color: #719509;
+			height:4vh;
 			padding-top: 5px;
 		}
-		hr{
-			border-top: 1px solid #56790b;
+		/*---hr{
+			border-top: 1px solid #719509;
 
-		}
+		}--*/
 		.contact-banner .text{
 			padding-left: 5px;
 			padding-right: 5px;
@@ -104,6 +103,7 @@ html{
 		 #upper-menu{
 
 			width: 100%;
+			height:17vh;
 			/*bottom:0;*/
 			/*font-family: 'Lato', sans-serif;*/
 			font-family: 'Montserrat', sans-serif;
@@ -113,6 +113,7 @@ html{
 		#upper-menu ul{
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			flex-wrap: wrap;
 
 		}
@@ -120,18 +121,18 @@ html{
 		#upper-menu li{
 			list-style-type: none;
 			/* flex-basis:12.5%; */
-			font-size: 2.0rem;
+			font-size: 1.7rem;
 			text-align: center;
 		}
 		.logo{
 			flex: 2;
 		}
 		.menu-front{
-			padding-top: 50px;
+			
 			flex: 2;
 		}
 		.menu-back{
-			padding-top: 50px;
+			
 			flex: 3;
 		}
 
@@ -152,10 +153,12 @@ html{
 		.header-image{
 			background-image: url("../img/Kudlaty-Klebuszek-szczenieta-pudle-morelowe2020n.jpg");
 			background-repeat: no-repeat;
-			height: 83%;
-			/* display: flex; */
+			background-size: cover;
+			height:79vh;
 			display:grid;
 			grid-template-columns: repeat(3,1fr);
+			
+			
 
 		}
 
@@ -170,7 +173,7 @@ html{
 
 			}
 			.header-tittle h1{
-				font-size: 3.5rem;
+				font-size: 3.0rem;
 				line-height: 5.0rem;
 
 			}
